@@ -1,0 +1,98 @@
+body{
+    height: 100vh;
+    background: var(--color-primary) url('../images/bg-desktop.svg') no-repeat top;
+    background-size: contain;
+    display: grid;
+    grid-template-areas: "logo logo"
+                        "about about"
+                        "footer footer";
+    grid-template-columns: repeat(2, auto);
+}
+
+.logo{
+    grid-area: logo; 
+    padding: 60px 160px 0;
+}
+
+.about{
+    grid-area: about;
+    display: flex;
+    padding: 0 80px 0 160px;
+}
+
+.about .about-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 500px;
+    padding-left: 35px;
+}
+
+.about .about-container h1{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+
+.about .about-container p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 45px;
+    line-height: 25px;
+}
+
+.about .about-container .button{
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: var(--color-primary);
+    box-shadow: 5px 6px 10px 1px rgba(0,0,0,0.51);
+    transition: 0.3s ease-in-out;
+}
+
+.about .about-container .button:hover{
+    color: #fff;
+    background-color: var(--color-soft);
+    cursor: pointer;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 160px 0 160px;
+} 
+
+.footer .attribution { 
+    font-size: 11px; 
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    padding-top: 8px;
+}
+.footer .attribution a {
+    font-weight: 400;
+    color: var(--color-soft);
+}
+
+.footer .social svg{
+    padding: 8px;
+    margin-inline: 5px;
+    border: 0.1px solid #fff;
+    border-radius: 80px;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .social svg:hover{
+    cursor: pointer;
+    color: var(--color-soft);
+    border-color: var(--color-soft);
+}
